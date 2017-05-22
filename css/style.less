@@ -581,6 +581,14 @@ address {
 .testimonials {
     background: url("@{i}quotes.png") top center no-repeat;
     padding-top: 60px;
+    position: relative;
+
+    &__item {
+
+        &:focus {
+            outline: 0;
+        }
+    }
 }
 
 .testimonials-text {
@@ -603,6 +611,37 @@ address {
     font-size: @small;
 }
 
+.slider-arrow {
+    border: 0;
+
+    width: 20px;
+    height: 30px;
+    background: url("../i/slider-arrows.png") no-repeat;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -15px;
+    opacity: .8;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &.prev {
+        left: -25px;
+    }
+
+    &.next {
+        right: -25px;
+        background-position: -20px 0;
+    }
+}
 
 
 
@@ -987,6 +1026,10 @@ address {
 
 
 
+/* Imports lib styles
+===========================*/
+
+@import "libs/slick";
 
 
 

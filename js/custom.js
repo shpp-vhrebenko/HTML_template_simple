@@ -106,7 +106,7 @@ $(function() {
 
 
 
-    /* ACORDEON
+    /* FAQ
     ========================*/
 
     /*$(".js-faq-title").on("click", function(e) {
@@ -164,7 +164,7 @@ $(function() {
 
 
 
-    /* Company Blog text toggle "Read MO"
+    /* Company Blog text toggle
     ========================*/
 
     $(".js-read-more").on("click", function(e) {
@@ -183,6 +183,46 @@ $(function() {
         $(this).prev(".js-blog-content").toggleClass("hidden");
 
     });
+
+
+
+
+
+    /* Slick.js http://kenwheeler.github.io/slick/
+    ========================*/
+
+    $('#js-testimonials-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: false
+    });
+
+
+    $(".js-slider-prev").on("click", function() {
+        $('#js-testimonials-slider').slick("slickPrev");
+    });
+
+    $(".js-slider-next").on("click", function() {
+        $('#js-testimonials-slider').slick("slickNext");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
