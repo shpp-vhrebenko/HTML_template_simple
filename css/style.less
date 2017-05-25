@@ -79,6 +79,11 @@ address {
     font-style: normal;
 }
 
+img {
+    outline: 0;
+    border: 0;
+}
+
 
 /* 2. Containers
 ===========================*/
@@ -177,6 +182,7 @@ address {
 }
 
 .title {
+    min-height: 56px;
     font-family: @second_family;
     font-size: @title;
     font-weight: 100;
@@ -738,7 +744,7 @@ address {
     background: url("@{i}map.jpg") no-repeat;
     background-size: cover;
     height: 548px;
-    padding-top: 100px;
+    position: relative;
 }
 
 .address-title {
@@ -761,8 +767,21 @@ address {
     font-size: @small;
 }
 
+.contacts-info {
+    position: relative;
+    padding-top: 100px;
+    z-index: 2;
+}
 
+.contacts-map {
+    width: 100%;
+    height: 100%;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 
 
@@ -1026,11 +1045,16 @@ address {
 
 
 
+
+
+
+
 /* Imports lib styles
 ===========================*/
 
 @import "libs/slick";
 @import "libs/animate";
+@import "libs/typed";
 
 
 

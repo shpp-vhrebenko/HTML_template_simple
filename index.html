@@ -25,6 +25,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Хостинг</title>
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -58,7 +62,7 @@
 
 
     <div class="container intro text-center">
-        <h1 class="title">Strength in equality.The power of dreams</h1>
+        <h1 class="title"><span class="js-typed"></span></h1>
         <p class="text">Web hosting for $9.95/mo $2.95/mo. Sign up today and also get a free<br>1-on-1 consultation to help you get started.</p>
         <a href="#" class="btn btn_red btn_intro" id="js-get-started">get started</a>
         <p><a href="#" class="link text-upper text-small">learn more</a></p>
@@ -296,8 +300,8 @@
                 <h3 class="post-title"><a href="#">How does the Internet Create Potential</a></h3>
                 <div class="post-info">
                     <time datetime="31.01.2016" pubdate="" class="post-info__item">31 January, 2016</time>
-                    <div class="post-info__item">6 comments</div>
-                    <div class="post-info__item"><i class="heart-icon"></i>12</div>
+                    <div class="post-info__item"><span class="js-counter-comments">6</span> comments</div>
+                    <div class="post-info__item"><i class="heart-icon"></i><span class="js-counter-likes">1112</span></div>
                 </div>
                 <p class="post-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo. <span class="hidden js-blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error fugiat cum minima natus molestias, harum impedit asperiores, dignissimos, explicabo, sapiente. Sequi, veniam dolores. Ipsam earum esse veniam, atque tempora.</span> <a href="#" class="link link_red js-read-more">Read More</a></p>
             </div>
@@ -311,8 +315,8 @@
                 <h3 class="post-title"><a href="#">How does the Internet Create Potential</a></h3>
                 <div class="post-info">
                     <time datetime="31.01.2016" pubdate="" class="post-info__item">31 January, 2016</time>
-                    <div class="post-info__item">6 comments</div>
-                    <div class="post-info__item"><i class="heart-icon"></i>22</div>
+                    <div class="post-info__item"><span class="js-counter-comments">12</span> comments</div>
+                    <div class="post-info__item"><i class="heart-icon"></i><span class="js-counter-likes">1985</span></div>
                 </div>
                 <p class="post-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo.<span class="hidden js-blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error fugiat cum minima natus molestias, harum impedit asperiores, dignissimos, explicabo, sapiente. Sequi, veniam dolores. Ipsam earum esse veniam, atque tempora.</span> <a href="#" class="link link_red js-read-more">Read More</a></p>
             </div>
@@ -326,8 +330,8 @@
                 <h3 class="post-title"><a href="#">How does the Internet Create Potential</a></h3>
                 <div class="post-info">
                     <time datetime="31.01.2016" pubdate="" class="post-info__item">31 January, 2016</time>
-                    <div class="post-info__item">6 comments</div>
-                    <div class="post-info__item"><i class="heart-icon"></i>41</div>
+                    <div class="post-info__item"><span class="js-counter-comments">42</span> comments</div>
+                    <div class="post-info__item"><i class="heart-icon"></i><span class="js-counter-likes">712</span></div>
                 </div>
                 <p class="post-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#" class="link link_red">Read More</a></p>
             </div>
@@ -382,20 +386,7 @@
 
 <!-- Map -->
 <div class="map" id="js-contacts">
-    <div class="container">
-
-        <h3 class="address-title">We are interested <br>in long-term cooperation</h3>
-        <address class="address">
-            100 William Street<br>
-            New York, New York 10038
-        </address>
-
-        <div>
-            <div class="work-days">Mon – Fri , 8 am – 5 pm</div>
-            <div>800-638-9996, 518-292-4500, <a href="#" class="link link_red">info@somecompany.com</a></div>
-        </div>
-
-    </div><!-- /.container -->
+    <div id="map" class="contacts-map"></div>
 </div><!-- /.map -->
 
 
@@ -501,6 +492,12 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 <script src="bower_components/wow/dist/wow.min.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
+<script src="bower_components/Counter-Up/jquery.counterup.min.js"></script>
+<script src="bower_components/typedjs-bower/dist/typed.min.js"></script>
+<script src="js/google_map.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

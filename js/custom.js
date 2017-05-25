@@ -231,15 +231,47 @@ $(function() {
 
 
 
+    /* Placeholders https://github.com/mathiasbynens/jquery-placeholder
+    ========================*/
+
+
+    $('input, textarea').placeholder();
 
 
 
 
 
 
+    /* Counter Up https://github.com/bfintal/Counter-Up
+    ========================*/
+    $('.js-counter-comments').counterUp({
+        delay: 10,
+        time: 1500
+    });
+
+
+    $('.js-counter-likes').counterUp({
+        delay: 10,
+        time: 3000
+    });
 
 
 
+
+
+    /* Typed https://github.com/mattboldt/typed.js
+    ========================*/
+
+    $(".js-typed").typed({
+        strings: ["Strength in equality.The power of dreams", "Second sentence."],
+        typeSpeed: 40,
+        backSpeed: 0,
+        backDelay: 800,
+        loop: true,
+        contentType: 'html',
+        showCursor: true,
+        cursorChar: "|",
+    });
 
 
 
